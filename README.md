@@ -75,8 +75,6 @@ The application features the following endpoint:
 
 For deployment, this application is suitable for serverless platforms (in this case GCP Cloud Functions) or any hosting service with support for Python and Flask applications. Make sure the service can receive and forward POST requests from Meraki to the application.
 
-To deploy a Cloud function: FILL
-
 ### Function Descriptions
 
 Below is a brief overview of the key functions within the application and their respective roles:
