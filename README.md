@@ -6,8 +6,7 @@ This project does 3 main things:
 
 This diagram provides a representation of how these elements complement one another:
 
-<img width="1474" alt="image" src="https://github.com/mobrowsk/meraki-lab-functions/assets/165918441/bde0b40a-15a7-4d94-8c07-01b2b0b5ecb0">
-
+![image](https://github.com/mobrowsk/meraki-dCloud-Labs/blob/main/images/flow-diagram.png)
 
 ## Table of Contents
 
