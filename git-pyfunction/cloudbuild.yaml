@@ -1,0 +1,14 @@
+steps:
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:
+  - functions
+  - deploy
+  - git-pyfunction
+  - --region=us-central1
+  - --source=https://source.developers.google.com/projects/gcp-merakidcloudlab-prd-16324/repos/github_mobrowsk_meraki-lab-functions/moveable-aliases/main/paths/git-pyfunction
+  - --trigger-http
+  - --allow-unauthenticated
+  - --security-level=secure-always
+  - --entry-point=handler
+  - --runtime=python311
+

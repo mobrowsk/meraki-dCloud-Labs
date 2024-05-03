@@ -1,0 +1,14 @@
+steps:
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:
+  - functions
+  - deploy
+  - dCloud-Ticketing-Bot
+  - --region=us-central1
+  - --source=https://source.developers.google.com/projects/gcp-merakidcloudlab-prd-16324/repos/github_mobrowsk_meraki-lab-functions/moveable-aliases/main/paths/git-dcloudfunction
+  - --trigger-http
+  - --allow-unauthenticated
+  - --security-level=secure-always
+  - --entry-point=webhook
+  - --runtime=python311
+
