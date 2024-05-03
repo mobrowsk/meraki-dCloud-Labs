@@ -130,6 +130,21 @@ Set the following environment variables in your `.env` file:
 
 This application can be deployed on any system capable of running Python scripts, as long as it has network access to both the Meraki API and the InfluxDB instance.
 
+### Connecting InfluxDB to Grafana
+In order to create a dashboard, data from InfluxDB must be sent to Grafana. To do this, navigate to
+Grafana and hover over the settings icon on and click ‘Data sources’.
+
+Click ‘Add data source’ and search for InfluxDB. You will now need to input the details of the
+InfluxDB bucket. Set the query language to Flux, the URL to http://localhost:8086 (or
+http://127.0.0.1:8086, depending on what URL you are using), set Access to ‘Server (default)’,
+enable Basic auth, enter your organisation ID, the name of the default bucket and the API token for
+the bucket you generated.
+
+Click ‘Save & test’. You should a green tick appear with a message saying the bucket has been found.
+
+To import the dashboard, hover over the four squares icon and click ‘Browse’. Click ‘Import’ and upload the
+included JSON file.
+
 ### Function Description
 
 - `update_deviceAvailabilities()`: Fetches device availability data for a predefined list of organization IDs and writes this data to InfluxDB using the `InfluxDB` class from `testInflux.py`.
